@@ -2,7 +2,7 @@
 
 A comprehensive Django-based mobile money platform replicating M-Pesa functionality. This system includes complete user registration, wallet management, agent/merchant operations, and all core mobile money services.
 
-## 🚀 Features
+##  Features
 
 ### Core Services
 - **Send Money** - Peer-to-peer money transfers
@@ -61,7 +61,7 @@ A comprehensive Django-based mobile money platform replicating M-Pesa functional
 - Push notifications ready
 - Email notifications ready
 
-## 📋 Requirements
+##  Requirements
 
 ```txt
 Django>=4.2.0
@@ -76,11 +76,11 @@ whitenoise>=6.5.0
 django-cors-headers>=4.2.0
 ```
 
-## 🛠️ Installation
+##  Installation
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/mpesa-clone.git
+git clone https://github.com/steve-ongera/mpesa-clone.git
 cd mpesa-clone
 ```
 
@@ -180,7 +180,7 @@ python manage.py runserver
 Access the application at: `http://localhost:8000`
 Admin panel at: `http://localhost:8000/admin`
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 mpesa-clone/
@@ -225,7 +225,7 @@ mpesa-clone/
     └── system_settings.json
 ```
 
-## 🗃️ Database Models
+##  Database Models
 
 ### User Management
 - **User** - Extended Django user model
@@ -264,7 +264,7 @@ mpesa-clone/
 - **SystemSetting** - Configuration
 - **MaintenanceWindow** - Downtime scheduling
 
-## 🔐 Security Features
+##  Security Features
 
 ### Authentication
 ```python
@@ -290,7 +290,7 @@ is_valid = check_password(pin_code, stored_hash)
 - Transaction attempts: 10 per minute
 - OTP requests: 3 per hour
 
-## 💰 Transaction Charges
+##  Transaction Charges
 
 Default charge structure (can be customized in admin):
 
@@ -366,7 +366,7 @@ GET  /api/merchant/settlement/    # Settlement reports
 POST /api/merchant/reconcile/     # Reconciliation
 ```
 
-## 🔄 Background Tasks (Celery)
+##  Background Tasks (Celery)
 
 ### Setup Celery
 ```bash
@@ -386,7 +386,7 @@ celery -A mpesa_project beat -l info
 - **Weekly**: Generate commission reports
 - **Monthly**: Account statements
 
-## 🧪 Testing
+##  Testing
 
 ### Run Tests
 ```bash
@@ -408,7 +408,7 @@ coverage html
 - Utils: 85%
 - Overall: 90%
 
-## 📊 Admin Dashboard Features
+##  Admin Dashboard Features
 
 ### User Management
 - View all users by type
@@ -452,7 +452,7 @@ coverage html
 - Schedule maintenance windows
 - Manage notifications
 
-## 🚀 Deployment
+##  Deployment
 
 ### Production Setup
 
@@ -574,7 +574,7 @@ volumes:
   media_volume:
 ```
 
-## 📈 Performance Optimization
+##  Performance Optimization
 
 ### Database Optimization
 ```python
@@ -609,7 +609,7 @@ balance = cache.get(f'wallet_balance_{user_id}')
 - Optimize foreign key queries
 - Cache frequently accessed data
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -640,7 +640,7 @@ redis-cli ping
 celery -A mpesa_project worker --purge
 ```
 
-## 📝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create feature branch (`git checkout -b feature/AmazingFeature`)
@@ -654,7 +654,7 @@ celery -A mpesa_project worker --purge
 - Update documentation
 - Add docstrings to functions
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
@@ -665,18 +665,17 @@ For support and queries:
 - Documentation: https://docs.mpesa-clone.com
 - Issues: https://github.com/yourusername/mpesa-clone/issues
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - M-Pesa for the inspiration
 - Django community
 - Africa's Talking for SMS gateway
 - All contributors
 
-## 📞 Contact
+##  Contact
+Steve Ongera - [@yourtwitter](https://twitter.com/steve-ongera)
 
-Your Name - [@yourtwitter](https://twitter.com/yourtwitter)
-
-Project Link: [https://github.com/yourusername/mpesa-clone](https://github.com/yourusername/mpesa-clone)
+Project Link: [https://github.com/yourusername/mpesa-clone](https://github.com/steve-ongera/mpesa-clone)
 
 ---
 
